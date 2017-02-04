@@ -1,0 +1,33 @@
+h2{
+  text-align:center;
+}
+
+.session{
+  border:1px solid #aeaeae;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoSection{
+  display:flex;
+  flex-direction: column;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+  border-bottom: 1px solid #aeaeae;
+}
+
+.label{
+  flex:1;
+  background:#eaeaea;
+}
+
+.value{
+  flex:3
+}
+
+.label,.value{
+  padding: 10px;
+}

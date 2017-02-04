@@ -1,0 +1,21 @@
+<form class="form" [formGroup]="feedbackForm" (ngSubmit)="saveFeedback($event)">
+  <div class="row">
+    <input formControlName="name" type="text" placeholder="Your Name">
+    <input formControlName="company" type="text" placeholder="Your Company">
+    <input formControlName="email" type="email" placeholder="Your Email">
+  </div>
+  <div class="row">
+    <input formControlName="mobile" type="number" placeholder="Your Mobile">
+    <input formControlName="speakerRating" max="10" type="range" placeholder="Rate Speaker"> <span class="ratingValue">{{feedbackForm.value.speakerRating}} /10</span>
+    <input formControlName="trainingRating" max="10" type="range" placeholder="Rate Training">
+    <span class="ratingValue">{{feedbackForm.value.trainingRating}} /10</span>
+  </div>
+  <div class="row">
+    <textarea formControlName="feedback" placeholder="Your Feedback Here"></textarea>
+    <textarea formControlName="suggestions" placeholder="Your Suggestions Here"></textarea>
+  </div>
+  <div class="row">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>

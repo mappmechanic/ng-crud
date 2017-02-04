@@ -1,0 +1,45 @@
+<div class="list">
+  <div class="header">
+    Feedback List
+    <button *ngIf="!addFormShown" (click)="addFormShown=true">+ Add New</button>
+    <button *ngIf="addFormShown" (click)="addFormShown=false">Hide Add Form</button>
+  </div>
+  <div class="pure-table">
+    <table>
+      <thead *ngIf="addFormShown">
+        <tr>
+          <td colspan="5">
+            <feedback-form (onFeedbackAdd)="onFeedbackAdd($event)"></feedback-form>
+          </td>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let feedback of list;let i=index">
+        <tr>
+          <td>{{i+1}}</td>
+          <td>{{feedback.name}}</td>
+          <td>{{feedback.company}}</td>
+          <td>{{feedback.email}}</td>
+          <td>
+            <button>Edit</button>
+            <button *ngIf="shownRowIndex !== i" (click)="onShowBtnClick(i)">Show</button>
+            <button *ngIf="shownRowIndex === i" (click)="onShowBtnClick(-1)">Hide</button>
+          </td>
+        </tr>
+        <tr *ngIf="shownRowIndex === i">
+          <td colspan="5">
+            <feedback [info]="feedback"></feedback>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

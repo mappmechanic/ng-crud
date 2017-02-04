@@ -1,0 +1,27 @@
+.feedbackDetails{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.26);
+  margin:10px;
+  transition:1s all;
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+}
+
+.column{
+  flex:1;
+  margin:10px;
+}
+
+.column .label{
+  font-size:14px;
+  color: #000;
+}
+
+.column .value{
+  font-size: 16px;
+  margin-top:3px;
+  border:1px solid #eaeaea;
+  padding: 10px;
+}

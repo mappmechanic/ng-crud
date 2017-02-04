@@ -1,0 +1,32 @@
+.list{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.list .header{
+  background: #525050;
+  color:#fff;
+  font-size:17px;
+  padding: 10px;
+}
+
+.list .header button{
+  border-radius:5px;
+  background: #fff;
+  color:#000;
+  margin-left:20px;
+}
+
+.list table{
+  width:100%;
+  border:1px solid #aeaeae;
+}
+
+td button{
+  margin:2px 10px;
+  border-radius: 5px;
+  outline: none;
+  padding: 3px 10px;
+  width:90px;
+}

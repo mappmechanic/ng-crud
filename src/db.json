@@ -1,0 +1,26 @@
+{
+  "feedbacks": [
+    {
+      "id": 1,
+      "name": "John Mathews",
+      "company": "ABC Ltd",
+      "email": "john@abc.com",
+      "mobile": 8860137755,
+      "speakerRating": 7,
+      "trainingRating": 8,
+      "feedback": "It was good training with nice hands on.",
+      "suggestions": "More time should be given for this training."
+    },
+    {
+      "id": 2,
+      "name": "Vin Diesel",
+      "company": "XYZ Ltd",
+      "email": "vin@diesel.com",
+      "mobile": 82637863686,
+      "speakerRating": 6,
+      "trainingRating": 6,
+      "feedback": "It was fun.",
+      "suggestions": "More amount of training."
+    }
+  ]
+}

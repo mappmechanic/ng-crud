@@ -1,0 +1,25 @@
+.form{
+  width: 100%;
+}
+
+.row{
+  display:flex;
+}
+
+input, textarea{
+  flex:1;
+  margin:10px 20px;
+}
+
+button{
+  margin:10px 20px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.ratingValue{
+  font-size: 12px;
+  font-weight: bold;
+  margin-top:13px;
+  margin-left:-5px;
+}
